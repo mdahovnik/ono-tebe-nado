@@ -277,12 +277,12 @@
 .footer {
   display: grid;
   grid-template-columns: 240px 1fr 240px;
+  font-size: 18px;
   margin: 181px 50px 88px;
 }
 
 .footer__address {
   font-style: normal;
-  font-size: 18px;
   line-height: 135%;
 }
 
@@ -311,7 +311,6 @@
 .footer__link {
   text-underline-offset: 3px;
   line-height: 21px;
-  font-size: 18px;
   letter-spacing: 0.01em;
 }
 
@@ -321,6 +320,11 @@
   list-style: none;
   width: 240px;
   height: 48px;
+}
+
+.footer__social-link{
+  list-style: none;
+
 }
 
 .footer__social-icon {
