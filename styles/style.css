@@ -1,5 +1,4 @@
 /* #region HEADER*/
-
 .header {
   display: grid;
   grid-template-columns: 454px 1fr 450px;
@@ -31,14 +30,13 @@
 .header__link {
   text-underline-offset: 3px;
   line-height: 21px;
-  /* font-weight: 400; */
   font-size: 18px;
   letter-spacing: 0.01em;
 }
 
 .header__logo {
   display: block;
-  width: 148px;
+  width: 145px;
   height: 105px;
 }
 
@@ -53,7 +51,6 @@
 
 .header__address {
   font-style: normal;
-  /* font-weight: 400; */
   line-height: 135%;
   font-size: 18px;
 }
@@ -131,29 +128,6 @@
   margin-bottom: 11px;
 }
 
-.singl-letter-spacing {
-  line-height: 127%;
-  letter-spacing: 1.1em;
-}
-
-.subtitle__button {
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 26px;
-}
-
-.letter-spacing-03 {
-  letter-spacing: 0.3em;
-}
-
-.letter-spacing-06 {
-  letter-spacing: 0.6em;
-}
-
-.letter-spacing-normal {
-  letter-spacing: normal;
-}
-
 .word-spacing {
   word-spacing: 19px;
 }
@@ -162,11 +136,12 @@
   background-color: transparent;
   text-transform: uppercase;
   border: 1px solid #fff;
-  padding: 12px 32px 11px 31px;
+  padding: 11px 32px 11px 31px;
   font-size: 22px;
   font-weight: 500;
   line-height: 26px;
 }
+
 /* #endregion */
 
 /* #region LOTS*/
@@ -187,7 +162,7 @@
   display: flex;
   gap: 25px;
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   color: #000;
 }
 
@@ -204,12 +179,14 @@
   position: relative;
   width: 334px;
   height: 563px;
-  padding: 51px 40px 48px;
+  padding: 51px 40px 47px;
 }
 
 .card__title {
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   position: relative;
   color: #fff;
   font-weight: 700;
@@ -224,8 +201,8 @@
   color: #fff;
 }
 
-.letter-spacing-ellipsis {
-  letter-spacing: 0.07em;
+.card__text-book {
+  line-height: 120%;
 }
 
 .card_type_film {
@@ -244,10 +221,13 @@
   font-weight: 400;
   font-size: 20px;
   text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
   margin-left: 40px;
 }
 
-/* #region */
+/* #endregion */
+
+/* #region ABOUT*/
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -257,7 +237,7 @@
 
 .about__logo {
   background-color: #000;
-  margin-top: 35px;
+  margin-top: 36px;
   width: 240px;
   height: 240px;
   justify-self: center;
@@ -287,37 +267,18 @@
   letter-spacing: 0.01em;
 }
 
-.letter-spacing-002 {
-  letter-spacing: 0.02em;
-}
-
-.letter-spacing-003 {
-  letter-spacing: 0.03em;
-}
-
-.letter-spacing-negative {
-  letter-spacing: -0.01em;
-}
-
 .about__text-content-second-section {
   margin-top: 24px;
   letter-spacing: normal;
 }
 
-.letter-spacing-001 {
-  letter-spacing: 0.01em;
-}
-
-.letter-spacing-004 {
-  letter-spacing: 0.04em;
-}
 /* #endregion */
 
 /* #region FOOTER*/
 .footer {
   display: grid;
   grid-template-columns: 240px 1fr 240px;
-  margin: 180px 50px 88px;
+  margin: 181px 50px 88px;
 }
 
 .footer__address {
@@ -366,4 +327,48 @@
 .footer__social-icon {
   height: 100%;
 }
+
+/* #endregion */
+
+/* #region LETTER-SPACING*/
+.letter-spacing-negative {
+  letter-spacing: -0.01em;
+}
+
+.letter-spacing-001 {
+  letter-spacing: 0.01em;
+}
+
+.letter-spacing-002 {
+  letter-spacing: 0.02em;
+}
+
+.letter-spacing-003 {
+  letter-spacing: 0.03em;
+}
+
+.letter-spacing-004 {
+  letter-spacing: 0.04em;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1.05em;
+}
+
+.letter-spacing-03 {
+  letter-spacing: 0.3em;
+}
+
+.letter-spacing-06 {
+  letter-spacing: 0.6em;
+}
+
+.letter-spacing-ellipsis {
+  letter-spacing: 0.07em;
+}
+
+.letter-spacing-normal {
+  letter-spacing: normal;
+}
+
 /* #endregion */
