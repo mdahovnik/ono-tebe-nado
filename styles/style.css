@@ -127,15 +127,13 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 22px;
-  /* font-weight: 400; */
-  line-height: 127%;
   margin-top: 12px;
   margin-bottom: 11px;
 }
 
 .singl-letter-spacing {
   line-height: 127%;
-  letter-spacing: 1em;
+  letter-spacing: 1.1em;
 }
 
 .subtitle__button {
@@ -144,11 +142,11 @@
   line-height: 26px;
 }
 
-.letter-spacing-o-te-ad {
+.letter-spacing-03 {
   letter-spacing: 0.3em;
 }
 
-.letter-spacing-no-be-n {
+.letter-spacing-06 {
   letter-spacing: 0.6em;
 }
 
@@ -169,7 +167,6 @@
   font-weight: 500;
   line-height: 26px;
 }
-
 /* #endregion */
 
 /* #region LOTS*/
@@ -222,7 +219,6 @@
 
 .card__text {
   position: relative;
-  /* font-weight: 400; */
   font-size: 20px;
   line-height: 120%;
   color: #fff;
@@ -245,7 +241,6 @@
 }
 
 .lots__look-more-link {
-  /* display: block; */
   font-weight: 400;
   font-size: 20px;
   text-underline-offset: 4px;
@@ -283,7 +278,6 @@
 
 .about__text {
   margin: 149px 0 0 0;
-  /* font-weight: 400; */
   font-size: 20px;
   line-height: 120%;
 }
@@ -293,34 +287,30 @@
   letter-spacing: 0.01em;
 }
 
-.letter-spacing-nashi {
+.letter-spacing-002 {
   letter-spacing: 0.02em;
 }
 
-.letter-spacing-bili {
-  letter-spacing: -0.01em;
-}
-
-.letter-spacing-dnevnik {
+.letter-spacing-003 {
   letter-spacing: 0.03em;
-}
-
-.letter-spacing-nerisovat {
-  letter-spacing: 0.02em;
 }
 
 .letter-spacing-negative {
   letter-spacing: -0.01em;
 }
 
-.about__text-content-first-section {
+.about__text-content-second-section {
+  margin-top: 24px;
+  letter-spacing: normal;
+}
+
+.letter-spacing-001 {
   letter-spacing: 0.01em;
 }
 
-.about__text-content-second-section {
-  margin-top: 24px;
+.letter-spacing-004 {
+  letter-spacing: 0.04em;
 }
-
 /* #endregion */
 
 /* #region FOOTER*/
@@ -332,7 +322,6 @@
 
 .footer__address {
   font-style: normal;
-  /* font-weight: 400; */
   font-size: 18px;
   line-height: 135%;
 }
@@ -340,8 +329,6 @@
 .footer__address-item-decoration {
   display: block;
   text-decoration: underline;
-  /* font-weight: 400; */
-  /* font-size: 18px; */
   line-height: 135%;
   letter-spacing: 0.01em;
   text-underline-offset: 4px;
@@ -354,8 +341,6 @@
 
 .footer__links-list-item {
   list-style-type: none;
-  /* font-weight: 400; */
-  /* font-size: 18px; */
   text-align: center;
 }
 
@@ -366,7 +351,6 @@
 .footer__link {
   text-underline-offset: 3px;
   line-height: 21px;
-  /* font-weight: 400; */
   font-size: 18px;
   letter-spacing: 0.01em;
 }
@@ -382,5 +366,4 @@
 .footer__social-icon {
   height: 100%;
 }
-
 /* #endregion */
