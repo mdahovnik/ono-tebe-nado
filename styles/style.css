@@ -1,8 +1,9 @@
 /* #region HEADER*/
+
 .header {
   display: grid;
-  grid-template-columns: 454px 1fr 450px;
-  margin: 92px 24px 0;
+  grid-template-columns: 452px 1fr 450px;
+  margin: 90px 24px 0;
 }
 
 .header__menu {
@@ -28,33 +29,31 @@
 
 .header__link {
   text-underline-offset: 3px;
-  line-height: 21px;
   font-size: 18px;
   letter-spacing: 0.01em;
 }
 
 .header__logo {
   display: block;
-  width: 145px;
-  height: 105px;
 }
 
 .header__logo-image {
-  height: 100%;
+  height: 105px;
 }
 
 .address {
-  width: 240px;
-  margin: 5px 25px 2px auto;
-}
-
-.header__address {
   font-style: normal;
   line-height: 135%;
   font-size: 18px;
+  width: 240px;
 }
 
-.header__address-item-decoration {
+.header__address {
+  margin: 5px 25px 2px auto;
+}
+
+.address-item-decoration {
+  display: block;
   text-decoration: underline;
   letter-spacing: 0.01em;
   text-underline-offset: 4px;
@@ -63,13 +62,14 @@
 /* #endregion */
 
 /* #region COVER*/
+
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
   color: rgb(255, 255, 255);
-  margin-top: 95px;
+  margin-top: 91px;
   margin-bottom: 179px;
   padding: 0.1px;
 }
@@ -84,36 +84,45 @@
 }
 
 .cover-title {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   text-transform: uppercase;
   position: relative;
   margin: 165px 50px 0 50px;
   font-size: 100px;
   font-weight: 700;
+  line-height: 100%;
+}
+
+.letter-spacing-normal {
+  letter-spacing: normal;
+}
+
+.letter-spacing-medium {
+  letter-spacing: 0.3em;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.6em;
 }
 
 .aligned-text {
-  display: block;
   text-align: start;
-  margin-bottom: 20px;
   line-height: 115%;
 }
 
 .aligned-text_center {
-  display: block;
   text-align: center;
-  margin-bottom: 20px;
-  line-height: 100%;
 }
 
 .aligned-text_right {
-  display: block;
   text-align: end;
-  line-height: 100%;
 }
 
 .cover__description {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   position: relative;
   margin: 135px 50px 51px 78px;
@@ -121,29 +130,29 @@
 
 .cover__description-text {
   text-transform: uppercase;
-  text-align: center;
   font-size: 22px;
-  margin-top: 12px;
-  margin-bottom: 11px;
 }
 
 .word-spacing {
-  word-spacing: 19px;
+  word-spacing: 18.4px;
 }
 
 .bet-button {
+  font-family: inherit;
   background-color: transparent;
   text-transform: uppercase;
+  color: #fff;
   border: 1px solid #fff;
-  padding: 11px 32px 11px 31px;
+  width: 256px;
+  height: 51px;
   font-size: 22px;
   font-weight: 500;
-  line-height: 26px;
 }
 
 /* #endregion */
 
 /* #region LOTS*/
+
 .lots {
   padding: 0 24px;
 }
@@ -152,17 +161,16 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
-  color: #000;
   margin-left: 40px;
   margin-bottom: 27px;
 }
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
-  margin-bottom: 31px;
-  color: #000;
+  margin-bottom: 30px;
 }
 
 .card-link {
@@ -177,7 +185,7 @@
   background-position: center;
   position: relative;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   padding: 51px 40px 47px;
 }
 
@@ -200,10 +208,6 @@
   color: #fff;
 }
 
-.card__text-book {
-  line-height: 120%;
-}
-
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
 }
@@ -219,7 +223,7 @@
 .lots__look-more-link {
   font-weight: 400;
   font-size: 20px;
-  text-underline-offset: 4px;
+  text-underline-offset: 5px;
   text-decoration-thickness: 1px;
   margin-left: 40px;
 }
@@ -227,6 +231,7 @@
 /* #endregion */
 
 /* #region ABOUT*/
+
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -235,6 +240,9 @@
 }
 
 .about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #000;
   margin-top: 36px;
   width: 240px;
@@ -244,54 +252,34 @@
 }
 
 .about__logo-image {
-  width: 148px;
   height: 114px;
-  margin: 64px 45px 62px 46px;
+}
+
+.about__content {
+  font-size: 20px;
 }
 
 .about__title {
+  margin-top: 137px;
+  margin-bottom: 100px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .about__text {
-  margin: 149px 0 0 0;
-  font-size: 20px;
-  line-height: 120%;
-}
-
-.about__text-content-first-section {
-  margin-top: 112px;
-  letter-spacing: 0.01em;
-}
-
-.about__text-content-second-section {
-  margin-top: 24px;
-  letter-spacing: normal;
+  margin-bottom: 24px;
 }
 
 /* #endregion */
 
 /* #region FOOTER*/
+
 .footer {
   display: grid;
   grid-template-columns: 240px 1fr 240px;
   font-size: 18px;
   margin: 181px 50px 88px;
-}
-
-.footer__address {
-  font-style: normal;
-  line-height: 135%;
-}
-
-.footer__address-item-decoration {
-  display: block;
-  text-decoration: underline;
-  line-height: 135%;
-  letter-spacing: 0.01em;
-  text-underline-offset: 4px;
 }
 
 .footer__links-list {
@@ -309,69 +297,21 @@
 }
 
 .footer__link {
-  text-underline-offset: 3px;
-  line-height: 21px;
-  letter-spacing: 0.01em;
+  text-underline-offset: 4px;
 }
 
 .footer__social-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 240px;
-  height: 48px;
 }
 
 .footer__social-link {
   list-style: none;
-
 }
 
 .footer__social-icon {
-  height: 100%;
-}
-
-/* #endregion */
-
-/* #region LETTER-SPACING*/
-.letter-spacing-negative {
-  letter-spacing: -0.01em;
-}
-
-.letter-spacing-001 {
-  letter-spacing: 0.01em;
-}
-
-.letter-spacing-002 {
-  letter-spacing: 0.02em;
-}
-
-.letter-spacing-003 {
-  letter-spacing: 0.03em;
-}
-
-.letter-spacing-004 {
-  letter-spacing: 0.04em;
-}
-
-.letter-spacing-1 {
-  letter-spacing: 1.05em;
-}
-
-.letter-spacing-03 {
-  letter-spacing: 0.3em;
-}
-
-.letter-spacing-06 {
-  letter-spacing: 0.6em;
-}
-
-.letter-spacing-ellipsis {
-  letter-spacing: 0.07em;
-}
-
-.letter-spacing-normal {
-  letter-spacing: normal;
+  height: 48px;
 }
 
 /* #endregion */
